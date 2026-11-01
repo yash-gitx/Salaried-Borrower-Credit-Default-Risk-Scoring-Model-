@@ -10,7 +10,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import roc_auc_score, average_precision_score, brier_score_loss
 
 # 1. Load Data & Define Features
-df = pd.read_csv("finnable_credit_risk.csv")
+df = pd.read_csv("credit_risk.csv")
 num_cols = [
     "cibil_score", "foir_pct", "cc_utilization_pct", "inquiries_last_3m",
     "nach_bounce_12m", "salary_credit_cv", "avg_eod_balance_ratio",
