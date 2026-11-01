@@ -8,11 +8,11 @@ st.set_page_config(page_title="Finnable Credit Risk & Underwriting Engine", layo
 
 @st.cache_data
 def load_scored_data():
-    return pd.read_csv("finnable_scored_portfolio.csv")
+    return pd.read_csv("scored_portfolio.csv")
 
 df = load_scored_data()
 
-st.title("Finnable — Salaried Borrower Credit Risk & PD Underwriting Simulator")
+st.title("Salaried Borrower Credit Risk & PD Underwriting Simulator")
 st.caption("Machine Learning Credit Scorecard (XGBoost + SHAP) | N = 60,000 Salaried Loan Cohort")
 
 # Sidebar: Dynamic Policy Cutoff Controls
